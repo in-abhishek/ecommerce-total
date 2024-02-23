@@ -1,0 +1,186 @@
+.single-page-bg{
+    background-color: #686161;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.single-page-bg h1{
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+}
+.register,.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+/* .login{
+    background-color: aliceblue;
+    padding: 1rem;
+} */
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: .6rem;
+    padding: .2rem;
+}
+.error{
+    color: rgb(204, 38, 38);
+    font-size: 1.2rem;
+}
+.col-6{
+    flex-basis: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+label{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 500;
+}
+input{
+    padding: .4rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #686161;
+    color: #000;
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+}
+.registerBtn1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.registerBtn,.loginBtn{
+    padding: .8rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid #97f2ef;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.loginBtn{
+    border: 1px solid rgb(84, 225, 84);
+}
+.registerBtn:hover{
+    border-color: #fff;
+    background-color: #63dfda;
+    color: #fff;
+}
+.loginBtn:hover{
+    border-color: #fff;
+    background-color: rgb(84, 225, 84);
+    color: #fff;
+}
+.submitted-popUp{
+    width: 450px;
+    height: 150px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.submitted-popUp h3{
+    font-size: 1.6rem;
+    color: #25d3a292;
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a.goTOHome {
+    padding: .8rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 1px solid rgba(38, 180, 128, 0.65);
+    color: rgba(38, 180, 128, 0.65);
+    transition: 0.5s;
+}
+a.goTOHome:hover {
+    border: 1px solid 000;
+    color: #000;
+    background-color: rgba(38, 180, 128, 0.65);
+}
+@media screen and (max-width:900px) {
+    .register, .login{
+        width: 100%;
+    }
+}
+@media screen and (max-width:580px) {
+
+    .single-page-bg .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    .registerBtn1{
+        flex-flow: row wrap;
+    }
+    .registerBtn1 .col-12{
+        margin: .5rem;
+    }
+    .register, .login{
+        width: 90%;
+        margin: auto;
+        transform: translate(-50%, 26%);
+    }
+    .single-page-bg .row .col-6{
+        flex-basis: 100%;
+        margin: .3rem;
+    }
+    .single-page-bg .row .col-6 input{
+        width: 100%;
+    }
+    .submitted-popUp{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    .login .row{
+        margin: 0; 
+        padding: 0.2rem;
+    }
+    .registerBtn, .loginBtn{
+        font-size: 1rem;
+    }
+    .single-page-bg h1{
+        font-size: 1.1rem;
+    }
+
+    a.goTOHome{
+        font-size: 1.1rem;
+        padding: .4rem;
+        border-radius: .3rem;
+    }
+    .registerBtn1 .col-6{
+        flex-basis: 45%;
+    }
+    .register{
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0%,0%);
+    }
+    .register .row{
+        margin: 0;
+    }
+    .single-page-bg{
+        height: auto;
+    }
+}

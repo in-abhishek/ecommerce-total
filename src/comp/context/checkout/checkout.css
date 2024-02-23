@@ -1,0 +1,82 @@
+.checkout {
+  margin: 1rem;
+}
+
+.checkout-container table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.checkout-container h1{
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.checkout-container table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.total_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+th,
+td {
+  padding: 15px;
+}
+
+.total-cost td {
+  border: none;
+}
+
+.checkout-body .imaegss img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.total-checkout-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(40, 48, 98);
+  padding: 1rem;
+}
+
+.checout-btn {
+  padding: .6rem .8rem;
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  border: 1px solid #ffbf59;
+  background-color: #ffbf59;
+  border-radius: 5px;
+  color: #fff;
+  transition: .5s;
+}
+
+.checout-btn:hover {
+  background-color: #fff;
+  color: #ffbf59;
+}
+.showCheckOut{
+  float: right;
+}
+.showCheckOutBtn {
+  border: 1px solid #02563D;
+  padding: .8rem 1.2rem;
+  border-radius: 5px;
+  color: #02563d;
+  font-size: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .5s;
+}
+.showCheckOutBtn:hover{
+  background-color: #02563d;
+  color: #fff;
+}
